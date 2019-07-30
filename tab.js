@@ -1,5 +1,5 @@
 const { useState, useRef, useEffect } = React;
-export function useTabState() {
+function useTabState() {
   const [tabState, setCardState] = useState({
     isActive: false
   });
@@ -17,7 +17,7 @@ export function useTabState() {
 }
 
 let pushed = [];
-export const Tab = props => {
+const Tab = props => {
   const inputEl = useRef();
   const { tabState, tabClick, toggleTabClose, toggleTabOpen } = useTabState();
 
@@ -91,3 +91,5 @@ export const Tab = props => {
     </div>
   );
 };
+
+exports.Tab = Tab;
