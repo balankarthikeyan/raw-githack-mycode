@@ -1,6 +1,5 @@
-const myObj = {
+'use strict'
+
+var myObj = {
   name: 'jarvis',
 }
-
-export { myObj }
-export default myObj
