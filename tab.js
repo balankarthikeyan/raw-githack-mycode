@@ -91,5 +91,3 @@ const Tab = props => {
     </div>
   );
 };
-
-exports.Tab = Tab;
